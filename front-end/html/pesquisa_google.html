@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Encontre no google</h1>
+    <form action="https://google.com/search">
+        <label for="q">
+            <!--é um texto associado ao input Informando o que é pra por no campo
+            O for informa qual o input associado
+            -->
+            <input type="text" id="q" name="q" placeholder="informe sua pesquisa" required>
+            <input type="email" autocomplete="off">
+            <!-- alguma validações  required quer dizer que é obrigatorio usar alguma informações da pesquisa  tem outra que é o email so vai aceitar se for email e o number é tem o min e max o tamanho numerico   -->
+            <input type="submit" value="pesquisar">
+
+        </label>
+        <label for="ice-cream-choice">Choose a flavor:</label>
+        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+        <datalist id="ice-cream-flavors">
+            <option value="Chocolate">
+            <option value="Coconut">
+            <option value="Mint">
+            <option value="Strawberry">
+            <option value="Vanilla">
+        </datalist>
+        <!-- O elemento HTML contém um conjunto de elementos que representam as opções permitidas ou recomendadas disponíveis para escolha em outros controles.<datalist> <option>         -->
+        <!-- o password ele faz com que não mostre o que estamos escrevendo  
+              o radio seleciona botões
+              checkbox e o mesmo do radio a difereça que podemos selecionar mais de um campo 
+            -->
+    </form>
+</body>
+
+</html>
