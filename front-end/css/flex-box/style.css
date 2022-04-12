@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.flex-container{
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+     /* column-gap: 5px; da um espaçamento coluna 
+    row-gap: 5px; da um espaçamento linha 
+    flex-direction: column; manda a direção como coluna
+    /* flex-direction: column-reverse; manda a direção como inverte ou veja vai para baixo
+    flex-direction: row; manda a direção como linha
+    flex-direction: row-reverse; manda a direção como inverte ou veja vai para baixo
+    flex-wrap: wrap; vai ser uma quebra
+    flex-wrap: nowrap; o contrario nao quebra
+    flex-wrap: wrap-reverse;  */
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.flex-item{
+    background-color:  #ff0044;
+    border: solid 1px #fff;
+    /* flex-basis: A propriedade CSS define o tamanho principal inicial de um item flexível. Ele define o tamanho da caixa de conteúdo, a menos que seja definido de outra forma com .flex-basis box-sizing */
+    flex-grow: 3;/*A propriedade CSS define o fator de crescimento flexível do tamanho principal de um item flexível .flex-grow */
+    flex-shrink: 3; /*A propriedade CSS define o fator de redução flexível de um item flexível. Se o tamanho de todos os itens flexíveis for maior que o contêiner flexível, os itens encolherão para caber de acordo com .flex-shrink flex-shrink*/
+}
+
+#flex-1{
+   background-color:  #ff0044; 
+   /* flex-grow:3; */
+   flex-shrink: 1;
+   flex: 1 1 250px;
+}
